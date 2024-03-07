@@ -1,1 +1,147 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+	height: 100%;
+	font-family: "Nunito Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #111111;
+	font-weight: 400;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 15px;
+	font-family: "Nunito Sans", sans-serif;
+	color: #3d3d3d;
+	font-weight: 400;
+	line-height: 25px;
+	margin: 0 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #ffffff;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+
+    /* Estilos adicionales */
+    .title {
+      margin: 3rem;
+    }
+    .semi-curve {
+      margin-top: 5rem;
+      /* border-top: 2px solid #000; */
+      border-radius: 0%;
+      width: 80%;
+      background-color: #fafafad6;
+      color: #303e25;
+      padding: 3rem;
+    }
+    .navbar-brand {
+      margin-right: auto;
+    }
+    .cart-info {
+      display: flex;
+      align-items: center;
+    }
+    .cart-info a {
+      color: rgb(15, 14, 14);
+      text-decoration: none;
+    }
+    .dashboard {
+      background-image: url('assets/img/dashboard.jpg');
+      background-size: cover;
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .dashboard h1, .dashboard h3 {
+      color: white;
+      text-align: center;
+    }
+    .dashboard img {
+      width: 25vh;
+    }
+    .product {
+      margin-bottom: 20px;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-info {
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+    }
+    .product-info p {
+      margin-bottom: 10px;
+    }
+    .carousel-item {
+      width: 30vh !important;
+    }
+    .offer-carousel .carousel-item img {
+      height: auto;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    .product-dashboard{
+      margin-top: 3rem !important;
+    }
