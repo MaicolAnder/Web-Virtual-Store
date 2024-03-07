@@ -74,6 +74,10 @@ ol {
 	margin: 0;
 }
 
+nav {
+  padding: 1rem !important;
+}
+
 
     /* Estilos adicionales */
     .title {
@@ -132,7 +136,7 @@ ol {
       margin-bottom: 10px;
     }
     .carousel-item {
-      width: 30vh !important;
+      width: 100vh !important;
     }
     .offer-carousel .carousel-item img {
       height: auto;
@@ -145,3 +149,12 @@ ol {
     .product-dashboard{
       margin-top: 3rem !important;
     }
+
+
+    /*---------------------
+  Header
+-----------------------*/
+
+.header {
+	background: #ffffff;
+}
