@@ -78,10 +78,13 @@ nav {
   padding: 1rem !important;
 }
 
+section {
+  padding: 2rem;
+}
 
     /* Estilos adicionales */
     .title {
-      margin: 3rem;
+      padding: 1rem;
     }
     .semi-curve {
       margin-top: 5rem;
@@ -146,6 +149,9 @@ nav {
       color: white;
       padding: 20px 0;
     }
+    .footer p {
+      color: #ffffff;
+    }
     .product-dashboard{
       margin-top: 3rem !important;
     }
@@ -157,4 +163,12 @@ nav {
 
 .header {
 	background: #ffffff;
+}
+.why_buy_with_us{
+  background: #0b4318;
+  color: #fff;
+}
+.img-thumbnail{
+  width: 200px !important;
+  height: 200px !important;
 }
