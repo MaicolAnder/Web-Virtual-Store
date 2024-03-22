@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../../shared/models/product';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { ProductsService } from '../../../services/products/products.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -11,5 +12,18 @@ import { RouterLink } from '@angular/router';
   styleUrl: './product-detail.component.css'
 })
 export class ProductDetailComponent {
-  // @Input() product : Product;
+
+  public product?: Product = new Product();
+
+  constructor(
+    private productsServices: ProductsService,
+    private router: Router
+  ) {
+    this.product = this.getProduct()
+    console.log(this.product)
+  }
+
+  getProduct(): Product | undefined {
+    return this.productsServices.getProduct();
+  }
 }

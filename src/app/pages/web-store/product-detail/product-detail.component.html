@@ -1,1 +1,30 @@
-<p>product-detail works!</p>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+    </div>
+    <div class="producto">
+        <div class="imagen">
+            <img src="{{product?.image}}" class="img img-responsive" alt="{{product?.title}}">
+            <div class="selector-imagenes">
+                <img src="imagen_miniatura_1.jpg" alt="Miniatura 1">
+                <img src="imagen_miniatura_2.jpg" alt="Miniatura 2">
+                <img src="imagen_miniatura_3.jpg" alt="Miniatura 3">
+                <!-- Agrega más miniaturas si es necesario -->
+            </div>
+        </div>
+        <div class="descripcion">
+            <h2>{{product?.title}}</h2>
+            <p class="detalle">{{ product?.description }}</p>
+            <p class="precio">{{ product?.price }}</p>
+            <div class="opciones">
+                <p>Colores: <span class="color">Azul, Rojo, Verde</span></p>
+                <p>Tallas: <span class="talla">S, M, L, XL</span></p>
+            </div>
+            <div class="acciones">
+                <button class="btn-favoritos">Agregar a Favoritos</button>
+                <button class="btn-carrito">Agregar al Carrito</button>
+                <button class="btn-compartir">Compartir</button>
+            </div>
+        </div>
+    </div>
+</div>
