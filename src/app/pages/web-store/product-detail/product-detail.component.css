@@ -1,0 +1,83 @@
+.producto {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.imagen {
+    flex: 1;
+    text-align: -webkit-center;
+    overflow: hidden; 
+}
+
+.imagen img {
+    max-width: 70%;
+    display: block;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.selector-imagenes {
+    display: flex;
+    overflow-x: auto; /* Para permitir desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch; /* Para un desplazamiento suave en iOS */
+}
+
+.selector-imagenes img {
+    max-width: 100px; /* Ancho máximo de las miniaturas */
+    margin-right: 5px;
+}
+
+.descripcion {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.descripcion h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.detalle {
+    font-size: 16px;
+}
+
+.precio {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.opciones {
+    margin-top: 10px;
+}
+
+.opciones p {
+    margin: 5px 0;
+}
+
+.opciones span {
+    font-weight: bold;
+}
+
+.acciones {
+    margin-top: 20px;
+}
+
+.btn-favoritos,
+.btn-carrito,
+.btn-compartir {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.btn-favoritos:hover,
+.btn-carrito:hover,
+.btn-compartir:hover {
+    background-color: #0056b3;
+}
