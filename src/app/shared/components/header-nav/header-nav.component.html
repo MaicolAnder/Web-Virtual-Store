@@ -1,21 +1,21 @@
 <nav class="header navbar fixed-top navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Joyería </a>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      </button>
+      <a class="navbar-brand" href="#">Joyería </a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="'/'">Inicio</a>
-            </li>
-            <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" [routerLink]="'/'" [state]="{ breadcrumb:false }">Inicio</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" [routerLink]="'/store'" >Tienda</a>
-            </li>
-            <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Exclusivos</a>
-            </li>
-            <li class="nav-item dropdown">
+          </li>
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Colecciones
             </a>
@@ -25,7 +25,7 @@
                 <li><a class="dropdown-item" href="#">Cumpleaños</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Esmeraldas</a></li>
-                <li><a class="dropdown-item" href="#">Safiros</a></li>            
+                <li><a class="dropdown-item" href="#">Safiros</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Cultura Misak</a></li>
             </ul>
@@ -36,4 +36,11 @@
         <a href="#">Carrito <span class="badge bg-success">$0.00</span></a>
         </div>
     </div>
+</nav>
+<nav *ngIf="isNavActive" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
 </nav>

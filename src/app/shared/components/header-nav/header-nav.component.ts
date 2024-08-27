@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -10,5 +10,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header-nav.component.css'
 })
 export class HeaderNavComponent {
+  isNavActive = false;
 
+  constructor(private location:Location){
+  }
+  ngOnInit() {
+    console.log(this.location.getState());
+  }
 }

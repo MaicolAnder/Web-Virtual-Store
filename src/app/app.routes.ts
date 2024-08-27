@@ -11,7 +11,8 @@ export const routes: Routes = [
     },
     {
         path: '',
-        component: LandingComponent
+        component: LandingComponent,
+        data: {breadcrumb: true}
     },
     {
         path: 'store',
@@ -19,6 +20,6 @@ export const routes: Routes = [
     },
     {
         path: 'detail/:id',
-        component: ProductDetailComponent 
+        component: ProductDetailComponent
     }
 ];
